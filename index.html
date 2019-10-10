@@ -1,18 +1,85 @@
-<!DOCTYPE html>
+body {
+    background-color: #cccccc;
+}
 
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
-</head>
+table {
+    font-family: Comic Sans MS;
+    font-size: 15px;
+    border-collapse: collapse;
+    width: 873px;
+    margin-left:-20px;
+}
+h2 {
+    margin-left:50px;
+}
+
+td, th {
+    padding: 10px;
+    text-align: left;
+}
+
+tbody tr:nth-child(2n){
+    background-color: #eee;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+</style>
+
+<div class="w3-row-padding">
+    <div class="w3-third" >
+        <table id="PersonList">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>UserName</th>
+	            <th>E-mail</th>
+	            <th>Phone</th>
+            </tr>
+        <tr w3-repeat="customers">
+                <td>{{id}}</td>
+                <td>{{name}}</td>
+                <td>{{username}}</td>
+	            <td>{{email}}</td>
+	            <td>{{phone}}</td>
+        </tr>
+    </table>
+</div>
+<script>
+    w3.displayObject("PersonList",myObject);
+</script>
+
 
 <body>
+    <div class="w3-third">
+       <p><p>
+</div>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+<div class="w3-third">
+    <h2> DataBase </h2>
+	    <p>A database is a collection of information that is organized so that it can be easily accessed, managed and updated.</p>
+	    <p>Data is organized into rows, columns and tables, and it is indexed to make it easier to find relevant information. Data gets updated, expanded and deleted as new information is added. Databases process workloads to create and update themselves, querying the data they contain and running applications against it.<p>
+	    <p>Computer databases typically contain aggregations of data records or files, such as sales transactions, product catalogs and inventories, and customer profiles.</p>
+    </div>
+</div>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+<body>
+    <div class="w3-container w3-gray">
+        <table>
+            <th>ID :<input type="number" name="id" id="id"></th>
+            <th>Name :<input type="text" name="name" id="name"></th>
+            <th>UserName :<input type="text" name="UserName" id="username"></th>
+            <th>E-mail :<input type="text" name="e-mail" id="email"></th>
+            <th>Phone :<input type="tel" name="phone" id="phone"></th>
+        <table>
+
+    <button onclick="addHtmlTableRow()">AddPerson</button><br>
+    <button onclick="editHtmlTbleSelectedRow();">EditPerson</button><br>
+    <button onclick="removeSelectedRow();">RemovePerson</button><br>
+</div>
 </body>
-</html>

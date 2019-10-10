@@ -1,0 +1,45 @@
+<style type="text/css">
+
+button  {
+    border: none;
+    border-radius: 30%;
+    padding: 5px 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    background-color: #333;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+    margin-left:-100px;
+}
+
+body {
+    background-color: #cccccc;
+}
+
+table {
+    font-family: Comic Sans MS;
+    font-size: 15px;
+    border-collapse: collapse;
+    width: 873px;
+    margin-left:-20px;
+}
+h2 {
+    margin-left:50px;
+}
+
+td, th {
+    padding: 10px;
+    text-align: left;
+}
+
+tbody tr:nth-child(2n){
+    background-color: #eee;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+</style>
